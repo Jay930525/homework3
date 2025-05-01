@@ -147,7 +147,7 @@ const backToTopBtn = document.getElementById("backToTopBtn");
 
 // 滾動事件：控制按鈕是否出現
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+    if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
         backToTopBtn.style.display = "block";
         backToTopBtn.style.pointerEvents = "auto";
     } 
