@@ -31,13 +31,16 @@ function switchID(id) {
 
 const openEyeSVG = `
 <svg viewBox="0 0 24 24" fill="none" class="eye-icon" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 12C2.73 7.89 7 4 12 4C17 4 21.27 7.89 23 12C21.27 16.11 17 20 12 20C7 20 2.73 16.11 1 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1 12C2.73 7.89 7 4 12 4C17 4 21.27 7.89 23 12C21.27 16.11 17 20 12 20C7 20 2.73 16.11 1 12Z" 
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
 
 const closedEyeSVG = `
 <svg viewBox="0 0 24 24" fill="none" class="eye-icon" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.94 17.94C16.14 19.24 14.14 20 12 20C7 20 2.73 16.11 1 12C1.73 10.06 3.06 8.25 4.88 6.94M9.88 5.3C10.57 5.11 11.27 5 12 5C17 5 21.27 8.89 23 13C22.44 14.39 21.57 15.61 20.47 16.6M1 1L23 23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.94 17.94C16.14 19.24 14.14 20 12 20C7 20 2.73 16.11 1 12C1.73 10.06 3.06 8.25 4.88 6.94M9.88 
+    5.3C10.57 5.11 11.27 5 12 5C17 5 21.27 8.89 23 13C22.44 14.39 21.57 15.61 20.47 16.6M1 1L23 23" 
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
 
 function togglePassword(button) {
