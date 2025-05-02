@@ -69,8 +69,22 @@ function setAgree(){
 function checkScroll() {
     const box = document.getElementById('scrollBox');
     const agreeBtn = document.getElementById('agreeBtn');
-    if (box.scrollTop + box.clientHeight + 100 >= box.scrollHeight) {
+
+    const scrollTop = box.scrollTop;
+    const clientHeight = box.clientHeight;
+    const scrollHeight = box.scrollHeight;
+
+    console.log("scrollTop:", scrollTop);
+    console.log("clientHeight:", clientHeight);
+    console.log("scrollHeight:", scrollHeight);
+    console.log("total:", scrollTop + clientHeight);
+
+    // 容錯範圍：允許誤差 ±1 像素
+    if (scrollTop + clientHeight >= scrollHeight - 100) {
         agreeBtn.disabled = false;
+        console.log("✅ 已捲到底，按鈕已啟用");
+    } else {
+        console.log("🚫 尚未捲到底");
     }
 }
 
