@@ -69,7 +69,7 @@ function setAgree(){
 function checkScroll() {
     const box = document.getElementById('scrollBox');
     const agreeBtn = document.getElementById('agreeBtn');
-    if (box.scrollTop + box.clientHeight >= box.scrollHeight) {
+    if (box.scrollTop + box.clientHeight + 100 >= box.scrollHeight) {
         agreeBtn.disabled = false;
     }
 }
