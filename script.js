@@ -181,3 +181,8 @@ backToTopBtn.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
+function toggleMenu() {
+    const nav = document.querySelector('.top-nav');
+    nav.classList.toggle('show');
+}

@@ -418,3 +418,52 @@ outline: 1px dashed blue;
 }
 
 
+
+
+/* 漢堡按鈕預設隱藏，在小螢幕時顯示 */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .top-bar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .logo {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .top-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #a00;
+        padding: 10px 0;
+    }
+
+    .top-nav a {
+        margin: 10px 0;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .top-nav.show {
+        display: flex;
+    }
+}
